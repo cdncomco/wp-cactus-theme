@@ -1,0 +1,131 @@
+:root {
+    --bs-white: #ffffff;
+    --bs-black: #000000;
+    --bs-light-gray: #f0f1f3;
+    --bs-gray: #5f697d;
+    --bs-dark-blue: #112031;
+    --bs-blue: #146ebe;
+}
+
+body {
+    background-color: var(--bs-white);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow-x: hidden;
+}
+.header {
+    background-color: var(--bs-dark-blue);
+}
+.header .wrapper {
+    padding: 12px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.header .wrapper a.navbar-brand {
+    color: var(--bs-black);
+    background-color: var(--bs-white);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: 2px solid var(--bs-black);
+    text-decoration: none;
+}
+.header .wrapper nav {
+    display: flex;
+    justify-content: center;
+}
+.header .wrapper nav a.nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--bs-white);
+    text-decoration: none;
+    margin-left: 30px;
+}
+.header .wrapper nav a.nav-link:after {
+    content: '';
+    border-bottom: 2px solid var(--bs-white);
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+    display: block;
+}
+.header .wrapper nav a.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 100%;
+}
+section {
+    margin: auto;
+    padding: 4rem;
+}
+#welcome {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bs-dark-blue);
+    padding: 4rem 6rem;
+}
+#welcome .socmed-container {
+    width: 160px;
+}
+#welcome .socmed-container ul {
+    margin: 0;
+    padding: 0;
+}
+#welcome .socmed-container li {
+    list-style: none;
+    margin-bottom: 14px;
+}
+#welcome .socmed-container li a {
+    text-decoration: none;
+    color: var(--bs-white);
+    font-size: 1.4rem;
+    transition: transform .5s ease-in-out;
+}
+#welcome .socmed-container li a:hover {
+    transform: scaleX(2);
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .container {
+        width: 576px;
+        margin: auto;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        width: 660px;
+        margin: auto;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1152px;
+        margin: auto;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container {
+        width: 1152px;
+        margin: auto;
+    }
+}
